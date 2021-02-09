@@ -1,9 +1,9 @@
 
 .container_a{
-    width: 80%;
+    width: 90%;
     background-position: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .box1{
@@ -21,9 +21,8 @@
 .container_a1{
     font-size: 75%;
     text-align: center;
-    /* vertical-align: bottom; */
     width: 100%;
-    display: flex;
+    /* display: flex; */
     justify-content:space-between;
     align-items: center;
     margin-bottom: 10px;
@@ -31,27 +30,22 @@
 
 .otoi {
     width: 120px;
-    height: 20px;
+    /* height: 25px; */
     background: #e50112 ;
-    border-radius:30px 30px 30px 30px;
+    border-radius:35px ;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     /* vertical-align: center; */
+    vertical-align:middle;
     margin-right: 10px;
 }
-
-/* .item_f{ */
-    /* margin-top: 10px; */
-    /* margin-bottom: 0px; */
-    /* display: block; */
-/* } */
 
 img{vertical-align:bottom;}
 
 .item_g{
     background-color: #00387e;
     /* width: 70%; */
-    height: 70px;
+    /* height: 70px; */
     margin-top: 0px;
     padding-top: 0px;
     font-size: 70%;
@@ -94,70 +88,58 @@ img{vertical-align:bottom;}
 
 
 .container_b{
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .container_b1{
     margin-left: 0%;
     margin-right: 0%;
     background-color: #00387e;
-    width: 70%;
 }
 
 .item_h{
     background-color: #00387e;
-    /* width: 70%; */
     height: 70px;
     color: white;
     font-size: 30%;
     text-align: center;
     vertical-align:center;
-    display: flex;
     justify-content:space-between;
     align-items: center;
 }
 
 .item_h1 {
-    width: 10%;
     height: 30px;
     background: #e50112 ;
     border-radius:10px 10px 10px 10px;
-    margin-left: 10%;
 }
 
 .item_h2 {
-    width: 10%;
     height: 30px;
     background: #e50112 ;
     border-radius:10px 10px 10px 10px;
 }
 
 .item_h3 {
-    width: 10%;
     height: 30px;
     background: #e50112 ;
     border-radius:10px 10px 10px 10px;
 }
 .item_h4 {
-    width: 10%;
     height: 30px;
     background: #e50112 ;
     border-radius:10px 10px 10px 10px;
 }
 .item_h5 {
-    width: 10%;
     height: 30px;
     background: #e50112 ;
     border-radius:10px 10px 10px 10px;
 }
 .item_h6 {
-    width: 10%;
     height: 30px;
     background: #e50112 ;
     border-radius:10px 10px 10px 10px;
-    margin-right: 10%;
 }
 
 
@@ -168,7 +150,6 @@ img{vertical-align:bottom;}
     text-align: center;
     vertical-align:center;
     background-color: #00387e;
-    width: 30%;
     height: 140px;
     margin:0px 0px 0px 0px;
     position: relative;
@@ -178,7 +159,6 @@ img{vertical-align:bottom;}
     width: 90%;
     height: 90%;
     text-align: center;
-    vertical-align:center;
     background: #7a7a7a ;
     border-radius:20px 20px 20px 20px;
     position: absolute;
@@ -187,4 +167,111 @@ img{vertical-align:bottom;}
     left: 0px;
     right: 0px;
     margin: auto;
+}
+
+.item_i p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.container_C{
+    position: relative;
+}
+.item_j{
+    color: darkorange;
+    font-weight: bold;
+    vertical-align: center;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.item_k{
+    text-align: center;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+@media ( min-width : 680px ){
+    .container_a1 {
+      display: flex;
+    }
+    .container_b{
+        display: flex;
+    }
+    .container_b1 {
+        flex-basis:70%;
+    }
+    .container_b2 {
+        flex-basis:30%;
+    }
+
+    .item_h {
+        display: flex;
+    }
+    .item_h1 {
+        width: 12%;
+        margin-left: 10%;
+    }
+    .item_h2 {
+        width: 12%;
+    }
+    .item_h3 {
+        width: 12%;
+    }
+    .item_h4 {
+        width: 12%;
+    }
+    .item_h5 {
+        width: 12%;
+    }
+    .item_h6 {
+        width: 12%;
+        margin-right: 10%;
+    }
+
+}
+
+@media ( max-width : 680px ){
+    /* .container_a1 {
+      /* display: flex; */
+    /* } */
+    .item_h {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item_h1 {
+        width: 24%;
+        margin-left: 10%;
+    }
+    .item_h2 {
+        width: 24%;
+    }
+    .item_h3 {
+        width: 24%;
+        margin-right: 10%;
+    }
+    .item_h4 {
+        width: 24%;
+        margin-left: 10%;
+    }
+    .item_h5 {
+        width: 24%;
+    }
+    .item_h6 {
+        width: 24%;
+        margin-right: 10%;
+    }
+
+    .otoi{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;           
+    }
 }
